@@ -1,1 +1,0 @@
-If enabled, whenever a proxied audio or video is accessed, referrer information will be maintained. This can be viewed in the logs to determine where the audio or video has been mentioned. Use 0 to keep the referrer data forever.

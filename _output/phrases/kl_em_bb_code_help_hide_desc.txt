@@ -1,1 +1,0 @@
-Hides wrapped text until certain conditions are fullfilled.

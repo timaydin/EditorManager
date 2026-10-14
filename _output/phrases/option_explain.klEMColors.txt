@@ -1,1 +1,0 @@
-The set of available text colors to pick from using the color picker dropdown. To remove a color, leave the value empty. The REMOVE button will automatically be added to the end of the list.

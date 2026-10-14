@@ -1,9 +1,0 @@
-{
-    "template": "smilie_list",
-    "description": "Extend smilie category colspan",
-    "execution_order": 10,
-    "enabled": true,
-    "action": "str_replace",
-    "find": "<xf:cell colspan=\"4\">{{ phrase('smilie_category_title",
-    "replace": "<xf:cell colspan=\"5\">{{ phrase('smilie_category_title"
-}

@@ -1,1 +1,0 @@
-Displays an audio player, using the wrapped text as URL.

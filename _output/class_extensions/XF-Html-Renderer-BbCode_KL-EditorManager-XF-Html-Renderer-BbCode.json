@@ -1,6 +1,0 @@
-{
-    "from_class": "XF\\Html\\Renderer\\BbCode",
-    "to_class": "KL\\EditorManager\\XF\\Html\\Renderer\\BbCode",
-    "execute_order": 1,
-    "active": true
-}

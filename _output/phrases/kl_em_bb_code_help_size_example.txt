@@ -1,1 +1,0 @@
-This is [SIZE=1]small[/SIZE] and [SIZE=7]big[/SIZE] text.

@@ -1,8 +1,6 @@
 {
   "additional_files": [
-    "js",
-    "styles",
-    "klEMProxy.php",
+    "js/editor-manager",
     "src/addons/KL/EditorManager/_specialChars"
   ],
   "minify": "*"

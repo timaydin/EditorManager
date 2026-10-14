@@ -1,9 +1,0 @@
-{
-    "parent_navigation_id": "logsContent",
-    "display_order": 605,
-    "link": "logs/video-proxy",
-    "icon": "",
-    "admin_permission_id": "viewLogs",
-    "debug_only": false,
-    "hide_no_children": false
-}

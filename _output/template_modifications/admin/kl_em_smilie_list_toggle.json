@@ -1,9 +1,0 @@
-{
-    "template": "smilie_list",
-    "description": "Add smilie active toggle",
-    "execution_order": 10,
-    "enabled": true,
-    "action": "str_replace",
-    "find": "<xf:delete href=\"{{ link('smilies/delete'",
-    "replace": "<xf:toggle name=\"kl_em_active[{$smilie.smilie_id}]\" selected=\"$smilie.kl_em_active\"\n\t\t   class=\"dataList-cell--separated\" submit=\"true\"\n\t\t   tooltip=\"{{ phrase('enable_disable_x', {'title': $smilie.title}) }}\" />\n$0"
-}

@@ -1,4 +1,0 @@
-[LEFT]Left-aligned[/LEFT]
-[CENTER]Center-aligned[/CENTER]
-[RIGHT]Right-aligned[/RIGHT]
-[JUSTIFY]This is a justified text block. This is a justified text block. This is a justified text block. This is a justified text block. This is a justified text block. This is a justified text block.[/JUSTIFY]

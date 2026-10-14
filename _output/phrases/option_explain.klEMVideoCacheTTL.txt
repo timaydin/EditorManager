@@ -1,1 +1,0 @@
-Enter the number of days that proxied videos should be retained for, before they are removed from your system. If the video is re-requested after this time, it will automatically be fetched again. Use 0 to retain the videos indefinitely.

@@ -1,1 +1,0 @@
-If a value greater than 0 is entered, audios cached by the audio proxy will be refreshed after this many days have passed. This can be used in conjunction with a long cache lifetime to allow audios to be updated periodically while retaining resilience against the audio being removed. If a value of 0 is entered, audios will only be updated when the cache entry expires.

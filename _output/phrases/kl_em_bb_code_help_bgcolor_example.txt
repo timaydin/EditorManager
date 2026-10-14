@@ -1,1 +1,0 @@
-This is [BGCOLOR=#FAA]red[/BGCOLOR] and [BGCOLOR=#AAF]blue[/BGCOLOR] highlighted text.

@@ -1,1 +1,0 @@
-Special markup to display tables in your content.

@@ -1,1 +1,0 @@
-In the following you find a list of font stacks, that are so widely spread, that the likelyhood of one of your users not having the font is very low. Due to this circumstance, they're considered to be <strong>web safe</strong> - safe to be used on your website.

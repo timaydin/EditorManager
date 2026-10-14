@@ -1,1 +1,0 @@
-This is the maximum file size for videos that are displayed through the image proxy system. A video larger than this will return a placeholder video instead. You may use 0 to disable the limit.

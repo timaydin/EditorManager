@@ -1,41 +1,5 @@
 {
-    "em.json": {
-        "hash": "0ccad9b8e4678f78cae473a7965cca55"
-    },
-    "emBBCode.json": {
-        "hash": "1a6e1fe662e1961ead06cb45c0158c86"
-    },
-    "emFonts.json": {
-        "hash": "84a674c40ecebbac81db97ce070809be"
-    },
-    "emLayout.json": {
-        "hash": "f65b66ad5b67fc24a454d8d7e7773bc6"
-    },
-    "emOptions.json": {
-        "hash": "238cf98b8ff1bcebcd9f51c27974e14f"
-    },
-    "emTemplates.json": {
-        "hash": "99c3e8387edd19848d9d726fb960ceef"
-    },
-    "klEMAudioProxyLog.json": {
-        "hash": "9254c67ba4f71b331239da2b5e1e7166"
-    },
     "klEMSpecialChars.json": {
-        "hash": "b32aa548c3ab1558934771899d598bd4"
-    },
-    "klEMVideoProxyLog.json": {
-        "hash": "e70832be605ca7beaf6ba02015ea9b94"
-    },
-    "kl_em_bbMedia.json": {
-        "hash": "2235acc75e6ffa78922a814143ac7863"
-    },
-    "kl_em_bbc.json": {
-        "hash": "30daa1591b7e003c2f231fca9adc4b60"
-    },
-    "kl_em_customBBC.json": {
-        "hash": "475c18cb7fdb12400f004632c05e5444"
-    },
-    "kl_em_editor.json": {
-        "hash": "46d436d15b6e67625b2691ec6d445a77"
+        "hash": "505872e7d035be4a4f7eb8c1af30384b"
     }
 }

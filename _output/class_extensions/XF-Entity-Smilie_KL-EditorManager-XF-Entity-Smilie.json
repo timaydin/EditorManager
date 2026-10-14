@@ -1,6 +1,0 @@
-{
-    "from_class": "XF\\Entity\\Smilie",
-    "to_class": "KL\\EditorManager\\XF\\Entity\\Smilie",
-    "execute_order": 10,
-    "active": true
-}

@@ -1,1 +1,0 @@
-This option allows you to select what the editor character counter should count.

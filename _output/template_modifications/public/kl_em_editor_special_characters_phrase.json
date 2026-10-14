@@ -1,0 +1,9 @@
+{
+    "template": "editor",
+    "description": "Translate the special characters button title.",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "\"__lang end__\": \"\"",
+    "replace": "\"Special Characters\": \"{{ phrase('kl_em_special_characters')|escape('json') }}\",\n$0"
+}

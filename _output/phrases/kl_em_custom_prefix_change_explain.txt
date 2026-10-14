@@ -1,1 +1,0 @@
-Changing your prefix will premanently render all emotes with the previous prefix defunct.

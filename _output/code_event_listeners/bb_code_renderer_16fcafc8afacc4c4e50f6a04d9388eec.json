@@ -1,9 +1,0 @@
-{
-    "event_id": "bb_code_renderer",
-    "execute_order": 10,
-    "callback_class": "KL\\EditorManager\\Listener\\BbCodeRenderer",
-    "callback_method": "extend",
-    "active": true,
-    "hint": "",
-    "description": ""
-}

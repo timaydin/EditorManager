@@ -1,1 +1,0 @@
-This is [COLOR=red]red[/COLOR] and [COLOR=#0000cc]blue[/COLOR] text.

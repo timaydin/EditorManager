@@ -1,9 +1,0 @@
-{
-    "template": "thread_view",
-    "description": "",
-    "execution_order": 10,
-    "enabled": true,
-    "action": "preg_replace",
-    "find": "/<xf:macro template=\"quick_reply_macros\" name=\"body\".*?>/s",
-    "replace": "$0\n<xf:hiddenval name=\"klPage\" value=\"{$page}\" />"
-}

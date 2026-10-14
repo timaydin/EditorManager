@@ -1,9 +1,0 @@
-{
-    "template": "_help_page_bb_codes",
-    "description": "Replace standard BB Code list with editor configuration.",
-    "execution_order": 10,
-    "enabled": true,
-    "action": "preg_replace",
-    "find": "/<ul class=\"listPlain block-body\">(.*?)<\\/ul>/s",
-    "replace": "<ul class=\"listPlain block-body\">\n\t<xf:include template=\"kl_em_help_page_bb_codes\" />\n</ul>"
-}

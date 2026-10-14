@@ -1,1 +1,0 @@
-Medium toolbar (1200 - 992px)

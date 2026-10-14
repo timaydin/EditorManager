@@ -1,9 +1,0 @@
-{
-    "template": "editor",
-    "description": "Inject Editor Extension Script",
-    "execution_order": 10,
-    "enabled": true,
-    "action": "preg_replace",
-    "find": "/<script(.*?)class=\"js-editorLanguage\"/",
-    "replace": "<xf:include template=\"kl_em_editor\" />\n$0"
-}

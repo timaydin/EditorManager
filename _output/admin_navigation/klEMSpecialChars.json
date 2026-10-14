@@ -1,6 +1,6 @@
 {
-    "parent_navigation_id": "kl_em_editor",
-    "display_order": 500,
+    "parent_navigation_id": "bbCode",
+    "display_order": 400,
     "link": "em/special-chars",
     "icon": "",
     "admin_permission_id": "bbCodeSmilie",

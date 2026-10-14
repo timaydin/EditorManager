@@ -1,1 +1,0 @@
-If enabled, will show a hex color code input, allowing users to chose their own text color.

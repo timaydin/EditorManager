@@ -1,1 +1,0 @@
-<strong>This is an advanced option.</strong> It is recommended to only edit it if you know exactly what you're doing. Adding controllers here will not make the hide BB code magically work on non-forum routes, but allows you to add additional controllers from 3rd party add-ons that add functionality to threads where the hide Bb code will not be hidden. One entry per line.

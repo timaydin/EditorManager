@@ -1,9 +1,0 @@
-{
-    "template": "editor",
-    "description": "Add phrases to editor setup.",
-    "execution_order": 1000,
-    "enabled": true,
-    "action": "str_replace",
-    "find": "\"__lang end__\": \"\"",
-    "replace": "<xf:include template=\"kl_em_editor_phrases\" />\n$0"
-}

@@ -1,9 +1,0 @@
-{
-    "template": "smilie_edit",
-    "description": "Add active toggle",
-    "execution_order": 9,
-    "enabled": true,
-    "action": "preg_replace",
-    "find": "#</div>\\s*<xf:submitrow sticky=\"true\" icon=\"save\" />#sU",
-    "replace": "<hr class=\"formRowSep\" />\n\n<xf:checkboxrow>\n\t<xf:option name=\"kl_em_active\" value=\"1\"\n\t\t\t   selected=\"{$smilie.kl_em_active}\">\n\t\t{{ phrase('enabled') }}\n\t</xf:option>\n</xf:checkboxrow>\n\n$0"
-}

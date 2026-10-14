@@ -1,9 +1,0 @@
-{
-    "template": "smilie_edit",
-    "description": "Add smilie user criteria tabs",
-    "execution_order": 10,
-    "enabled": true,
-    "action": "str_replace",
-    "find": "<div class=\"block-container\">",
-    "replace": "$0\n<xf:macro template=\"kl_em_smilie_edit_macros\"\n\t\t  name=\"tabs\" arg-smilie=\"{$smilie}\" />"
-}

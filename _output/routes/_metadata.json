@@ -1,29 +1,8 @@
 {
-    "admin_em_bb-codes.json": {
-        "hash": "9fabb69cf217342e1bf5c86e41460a51"
-    },
-    "admin_em_fonts.json": {
-        "hash": "836624db07228009b3aef771a4fffb04"
-    },
     "admin_em_special-chars-characters.json": {
         "hash": "2b200a43b05bf0d904d829f931777273"
     },
     "admin_em_special-chars.json": {
         "hash": "58de60b0c9952f9a30ed68967873a4a7"
-    },
-    "admin_em_templates.json": {
-        "hash": "3c4e2bd313aaf0b8adc88fcdae4298ea"
-    },
-    "admin_logs_audio-proxy.json": {
-        "hash": "9e69be07ae6080065583387e14470318"
-    },
-    "admin_logs_video-proxy.json": {
-        "hash": "17898e08da7098906633af47ef51df70"
-    },
-    "public_account_kl-custom-emotes.json": {
-        "hash": "33d0b234a7540ab01be908ec81a65bb5"
-    },
-    "public_account_kl-editor-templates.json": {
-        "hash": "dd412c40b5719d5ae4f5719591d992d0"
     }
 }

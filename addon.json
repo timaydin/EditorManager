@@ -1,9 +1,9 @@
 {
     "legacy_addon_id": "",
-    "title": "Editor & BB Code Manager",
-    "description": "Take full control over your BB codes and rich text editor.",
-    "version_id": 2000191,
-    "version_string": "2.0.1 Patch Level 1",
+    "title": "Editor Manager: Special Characters",
+    "description": "Configurable special character categories and an editor button to insert them.",
+    "version_id": 3000070,
+    "version_string": "3.0.0",
     "dev": "Lukas W.",
     "dev_url": "https://xenforo.com/community/members/42496/",
     "faq_url": "https://xenforo.com/community/resources/5657/field?field=faq",
@@ -11,8 +11,8 @@
     "extra_urls": [],
     "require": {
         "XF": [
-            2020010,
-            "XenForo 2.2.0+"
+            2030070,
+            "XenForo 2.3.0+"
         ],
         "php": [
             "7.2.0",

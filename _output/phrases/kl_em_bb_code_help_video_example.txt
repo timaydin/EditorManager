@@ -1,3 +1,0 @@
-[VIDEO]{url}[/VIDEO]
-
-[VIDEO='width:300']{url}[/VIDEO]

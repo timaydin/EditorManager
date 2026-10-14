@@ -17,7 +17,6 @@ use XF;
 use XF\Admin\Controller\AbstractController;
 use XF\ControllerPlugin\Delete;
 use XF\ControllerPlugin\Toggle;
-use XF\Entity\Smilie;
 use XF\Mvc\FormAction;
 use XF\Mvc\ParameterBag;
 use XF\Mvc\Reply\AbstractReply;
@@ -34,6 +33,20 @@ use XF\Util\Xml;
  */
 class SpecialChars extends AbstractController
 {
+    protected function preDispatchController($action, ParameterBag $params): void
+    {
+        $this->assertAdminPermission('bbCodeSmilie');
+    }
+
+    /**
+     * Directory with the bundled Unicode block libraries that can be imported.
+     */
+    protected function getLibraryDirectory(): string
+    {
+        return XF::getAddOnDirectory() . DIRECTORY_SEPARATOR . 'KL' . DIRECTORY_SEPARATOR . 'EditorManager'
+            . DIRECTORY_SEPARATOR . '_specialChars';
+    }
+
     /**
      * @return SpecialCharacterRepo|XF\Mvc\Entity\Repository
      */
@@ -48,7 +61,7 @@ class SpecialChars extends AbstractController
     public function actionIndex(): AbstractReply
     {
         $viewParams = [
-            'specialChars' => $this->getSpecialCharactersRepo()->getCategoriesForList()
+            'specialChars' => $this->getSpecialCharactersRepo()->findGroupsForList()->fetch()
         ];
 
         return $this->view('KL\EditorManager:SpecialChars\List', 'kl_em_special_chars_list', $viewParams);
@@ -160,15 +173,17 @@ class SpecialChars extends AbstractController
      */
     public function actionSort(): AbstractReply
     {
-        $groups = $this->getSpecialCharactersRepo()->getCategoriesForList();
+        $groups = $this->getSpecialCharactersRepo()->findGroupsForList()->fetch();
 
         if ($this->isPost()) {
             $lastOrder = 0;
             foreach (json_decode($this->filter('groups', 'string')) as $groupValue) {
                 $lastOrder += 10;
 
-                /** @var Smilie $smilie */
-                $group = $groups[$groupValue->id];
+                $group = $groups[$groupValue->id] ?? null;
+                if (!$group) {
+                    continue;
+                }
                 $group->display_order = $lastOrder;
                 $group->saveIfChanged();
             }
@@ -214,7 +229,7 @@ class SpecialChars extends AbstractController
 
         $viewParams = [
             'group' => $group,
-            'specialChars' => $this->getSpecialCharactersRepo()->getCharactersForList($group->group_id)
+            'specialChars' => $this->getSpecialCharactersRepo()->findCharactersForList($group->group_id)->fetch()
         ];
 
         return $this->view('KL\EditorManager:SpecialChars\Character\List', 'kl_em_special_chars_character_list',
@@ -255,7 +270,7 @@ class SpecialChars extends AbstractController
     protected function characterAddEdit(SpecialCharacter $character): AbstractReply
     {
         $viewParams = [
-            'groups' => $this->getSpecialCharactersRepo()->getCategoriesForList(),
+            'groups' => $this->getSpecialCharactersRepo()->findGroupsForList()->fetch(),
             'character' => $character
         ];
 
@@ -336,15 +351,17 @@ class SpecialChars extends AbstractController
     public function actionCharacterSort(ParameterBag $params): AbstractReply
     {
         $group = $this->assertGroupExists($params['group_id']);
-        $characters = $this->getSpecialCharactersRepo()->getCharactersForList($group->group_id);
+        $characters = $this->getSpecialCharactersRepo()->findCharactersForList($group->group_id)->fetch();
 
         if ($this->isPost()) {
             $lastOrder = 0;
             foreach (json_decode($this->filter('characters', 'string')) as $characterValue) {
                 $lastOrder += 10;
 
-                /** @var Smilie $smilie */
-                $character = $characters[$characterValue->id];
+                $character = $characters[$characterValue->id] ?? null;
+                if (!$character) {
+                    continue;
+                }
                 $character->display_order = $lastOrder;
                 $character->saveIfChanged();
             }
@@ -405,16 +422,14 @@ class SpecialChars extends AbstractController
      */
     public function actionImport(): AbstractReply
     {
-        $sourceDir = XF::getSourceDirectory();
-        $dirSep = DIRECTORY_SEPARATOR;
-        $xmlDir = $sourceDir . str_replace('/', $dirSep, "/addons/KL/EditorManager/_specialChars");
         $libraries = [];
-        array_map(function ($entry) use (&$libraries) {
+        foreach (glob($this->getLibraryDirectory() . DIRECTORY_SEPARATOR . '*.xml') as $path) {
+            $entry = basename($path);
             $libraries[substr($entry, 0, -4)] = [
                 'file' => $entry,
-                'name' => substr(str_replace('_', ' ', $entry), 0, -4)
+                'name' => str_replace('_', ' ', substr($entry, 0, -4))
             ];
-        }, array_slice(scandir($xmlDir), 2));
+        }
 
         $viewParams = [
             'libraries' => $libraries
@@ -438,11 +453,11 @@ class SpecialChars extends AbstractController
 
             $file = $upload->getTempFile();
         } else {
-            $libraryFile = $this->filter('library', 'str');
-            $sourceDir = XF::getSourceDirectory();
-            $dirSep = DIRECTORY_SEPARATOR;
-            $xmlDir = "{$sourceDir}{$dirSep}addons{$dirSep}KL{$dirSep}EditorManager{$dirSep}_specialChars";
-            $file = "{$xmlDir}{$dirSep}{$libraryFile}";
+            $libraryFile = basename($this->filter('library', 'str'));
+            $file = $this->getLibraryDirectory() . DIRECTORY_SEPARATOR . $libraryFile;
+            if (substr($libraryFile, -4) !== '.xml' || !is_file($file)) {
+                return $this->error(XF::phrase('kl_em_please_upload_valid_xml_file'));
+            }
         }
 
         try {
@@ -500,34 +515,28 @@ class SpecialChars extends AbstractController
     public function actionExport(): AbstractReply
     {
         if ($this->isPost()) {
-            $categoryId = $this->filter('category', 'uint');
+            $category = $this->assertGroupExists($this->filter('category', 'uint'));
+            $characters = $this->getSpecialCharactersRepo()->findCharactersForList($category->group_id)->fetch();
 
-            /** @var SpecialCharacterGroup $category */
-            $category = $this->em()->find('KL\EditorManager:SpecialCharacterGroup', $categoryId);
-            $icons = $this->finder('KL\EditorManager:SpecialCharacter')->where('group_id', '=',
-                $categoryId)->order('display_order')->fetch();
-
-            $xmlIcons = [];
-            foreach ($icons as $icon) {
-                $xmlIcons[] = [
-                    'title' => $icon->title,
-                    'code' => $icon->code
+            $xmlCharacters = [];
+            foreach ($characters as $character) {
+                $xmlCharacters[] = [
+                    'title' => $character->title,
+                    'code' => $character->code
                 ];
             }
-
-            $category = [
-                'title' => $category->title,
-                'characters' => $xmlIcons
-            ];
 
             $xml = new SimpleXMLElement('<category/>');
 
             $this->setResponseType('xml');
-            $this->arrayToXML($category, $xml);
+            $this->arrayToXML([
+                'title' => $category->title,
+                'characters' => $xmlCharacters
+            ], $xml);
 
             $viewParams = [
                 'xml' => $xml,
-                'title' => $category->title
+                'title' => preg_replace('/[^a-z0-9_-]+/i', '_', (string)$category->title)
             ];
             return $this->view('KL\EditorManager:SpecialCharacters\XML', '', $viewParams);
 

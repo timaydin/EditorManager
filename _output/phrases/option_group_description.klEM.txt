@@ -1,1 +1,0 @@
-Options centered around the Froala Editor.

@@ -1,9 +1,0 @@
-{
-    "template": "account_preferences",
-    "description": "Add char count preference setting.",
-    "execution_order": 10,
-    "enabled": true,
-    "action": "str_replace",
-    "find": "<xf:macro template=\"helper_account\" name=\"activity_privacy_row\" />",
-    "replace": "<xf:if is=\"$xf.options.klEMCharCounter === 'user'\">\n\t<xf:radiorow name=\"kl_em_wordcount_mode\"\n\t\t\t\t label=\"{{ phrase('kl_em_charcount_mode') }}\"\n\t\t\t\t explain=\"{{ phrase('kl_em_charcount_mode_explain') }}\"\n\t\t\t\t value=\"{$xf.visitor.Option.kl_em_wordcount_mode}\">\n\t\t<xf:option value=\"letter\">{{ phrase('kl_em_letters') }}</xf:option>\n\t\t<xf:option value=\"word\">{{ phrase('kl_em_words') }}</xf:option>\n\t</xf:radiorow>\n\t<xf:else />\n\t<xf:hiddenval name=\"kl_em_wordcount_mode\" value=\"{$xf.visitor.Option.kl_em_wordcount_mode}\" />\n</xf:if>\n\n$0"
-}

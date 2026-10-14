@@ -1,1 +1,0 @@
-The hide-version the default [hide] code will act like.

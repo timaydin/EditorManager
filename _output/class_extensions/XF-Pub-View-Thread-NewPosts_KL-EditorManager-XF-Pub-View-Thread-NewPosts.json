@@ -1,6 +1,0 @@
-{
-    "from_class": "XF\\Pub\\View\\Thread\\NewPosts",
-    "to_class": "KL\\EditorManager\\XF\\Pub\\View\\Thread\\NewPosts",
-    "execute_order": 10,
-    "active": true
-}

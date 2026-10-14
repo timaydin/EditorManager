@@ -3,7 +3,7 @@
 		<xf:if is="$results">
 			<ul class="specialCharacterList">
 				<xf:foreach loop="$results" value="{$result}">
-					<li><a class="js-specialCharacter" title="{$character.title}" data-id="{$result.character_id}" data-shortname="{$result.title}">{$result.code|raw}</a></li>
+					<li><a class="js-specialCharacter" title="{$result.title}" data-id="{$result.character_id}" data-shortname="{$result.title}">{$result.code|raw}</a></li>
 				</xf:foreach>
 			</ul>
 		<xf:else />

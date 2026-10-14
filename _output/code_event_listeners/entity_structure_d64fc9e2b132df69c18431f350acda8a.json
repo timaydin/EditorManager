@@ -1,9 +1,0 @@
-{
-    "event_id": "entity_structure",
-    "execute_order": 10,
-    "callback_class": "KL\\EditorManager\\Listener\\EntityStructure",
-    "callback_method": "bbCode",
-    "active": true,
-    "hint": "XF:BbCode",
-    "description": "XF:BbCode"
-}

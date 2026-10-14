@@ -1,6 +1,0 @@
-{
-    "from_class": "XF\\Repository\\Option",
-    "to_class": "KL\\EditorManager\\XF\\Repository\\Option",
-    "execute_order": 10,
-    "active": true
-}

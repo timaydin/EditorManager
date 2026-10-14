@@ -1,1 +1,0 @@
-This is the maximum file size for audios that are displayed through the audio proxy system. An audio larger than this will return a placeholder audio instead. You may use 0 to disable the limit.

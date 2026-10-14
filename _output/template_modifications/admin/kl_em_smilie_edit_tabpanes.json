@@ -1,9 +1,0 @@
-{
-    "template": "smilie_edit",
-    "description": "Add smilie user criteria panes",
-    "execution_order": 10,
-    "enabled": true,
-    "action": "preg_replace",
-    "find": "/<div class=\"block-body\">(.*)<\\/div>(.*?)<xf:submitrow/s",
-    "replace": "<div class=\"block-body\">\n\t<ul class=\"tabPanes js-klEMSmilieTabPanes\">\n\t\t<!--[XF:kl_em_smilie_tabPanels:top]-->\n\t\t<li class=\"is-active\" role=\"tabpanel\" id=\"smilie-options\">\n\t\t$1\n\t\t</li>\n\t\t<xf:macro name=\"tab_panes\"\n\t\t\t\t  template=\"kl_em_smilie_edit_macros\"\n\t\t\t\t  arg-userCriteria=\"{$klEMUserCriteria}\"\n\t\t\t\t  arg-smilie=\"{$smilie}\" />\n\t\t<!--[XF:kl_em_smilie_tabPanels:bottom]-->\n\t</ul>\n</div>\n$2\n<xf:submitrow"
-}

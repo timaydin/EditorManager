@@ -1,1 +1,0 @@
-If you enter a Google Font API key here, your board will be able to automatically update the google fonts list by itself once a week and provider your users with suggestions when they search for a google font in the BB Code editor.

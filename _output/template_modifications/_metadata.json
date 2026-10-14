@@ -1,59 +1,8 @@
 {
-    "admin/kl_em_PAGE_CONTAINER_admin.json": {
-        "hash": "e1bf8210d336022220c0fbc7e30c45fb"
+    "public/kl_em_editor_special_characters_js.json": {
+        "hash": "bb5e122201d2939ff92f5951eef4c05a"
     },
-    "admin/kl_em_app_less.json": {
-        "hash": "1a221fcc8370fdfafd4a4d22bcfb4828"
-    },
-    "admin/kl_em_smilie_edit_activeToggle.json": {
-        "hash": "85fd32454626c85ae6edc9bf29cd692c"
-    },
-    "admin/kl_em_smilie_edit_tabpanes.json": {
-        "hash": "462103af975ce1af15fde361ef248bc5"
-    },
-    "admin/kl_em_smilie_edit_tabs.json": {
-        "hash": "5b05fdadf53baa1da06f96e35c1195d5"
-    },
-    "admin/kl_em_smilie_list_colspan.json": {
-        "hash": "831b9a1f2f68be3e0e72b8634087f644"
-    },
-    "admin/kl_em_smilie_list_colspan2.json": {
-        "hash": "7cc27b455db6f0f00e5f2fc676f40fdd"
-    },
-    "admin/kl_em_smilie_list_toggle.json": {
-        "hash": "28b41e2fa002550344844342032051f4"
-    },
-    "public/KL_EM_editor_phrases.json": {
-        "hash": "1faa996ab7f7111e16c082a029cc2acb"
-    },
-    "public/kl_em_PAGE_CONTAINER.json": {
-        "hash": "7a6f7b4b70b02cc127cec26ff2b5619e"
-    },
-    "public/kl_em_account_preferences.json": {
-        "hash": "6e6595c4f2ff9917250cf237d0c1da8a"
-    },
-    "public/kl_em_account_visitor_menu.json": {
-        "hash": "e5894f3a324f1d7d8b9b9332829d95ab"
-    },
-    "public/kl_em_account_wrapper.json": {
-        "hash": "9121c5fad966ba5b92d826775d783bd6"
-    },
-    "public/kl_em_bb_code_less.json": {
-        "hash": "6c03746b6eb35c420fc2ef57839973d8"
-    },
-    "public/kl_em_editor.json": {
-        "hash": "3e5f67fa7fae6c6d79529541f22fc90a"
-    },
-    "public/kl_em_editor_less.json": {
-        "hash": "a32711ff24f82d5849f453b7f08ab474"
-    },
-    "public/kl_em_help_page_bb_codes.json": {
-        "hash": "e28aa84147124d24a72afeff771cb501"
-    },
-    "public/kl_em_post_macros.json": {
-        "hash": "16e51803cdb0f6cceb53ed940d3e89d9"
-    },
-    "public/kl_em_thread_view.json": {
-        "hash": "b6d93c3e8ba3a581e57544d327f5b728"
+    "public/kl_em_editor_special_characters_phrase.json": {
+        "hash": "bf5bbae2c3044b51616fa24ff018eeb2"
     }
 }

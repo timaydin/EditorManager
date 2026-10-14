@@ -1,9 +1,0 @@
-{
-    "template": "bb_code.less",
-    "description": "Include BB Code",
-    "execution_order": 1000,
-    "enabled": true,
-    "action": "preg_replace",
-    "find": "/$/",
-    "replace": "<xf:include template=\"public:kl_em_bb_code.less\" />"
-}

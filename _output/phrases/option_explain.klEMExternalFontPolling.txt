@@ -1,1 +1,0 @@
-If enabled, users that have been granted the permission will be able to utilize the whole Google Fonts library in their BB code content, no matter if they have been integrated into your web page or not. If they're not already included, they will be loaded on demand.

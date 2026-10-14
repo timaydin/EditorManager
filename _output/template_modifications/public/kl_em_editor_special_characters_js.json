@@ -1,0 +1,9 @@
+{
+    "template": "editor",
+    "description": "Load the special characters editor plugin.",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<!--[XF:include_js]-->",
+    "replace": "<xf:js src=\"editor-manager/special-characters.js\" min=\"1\" addon=\"KL/EditorManager\" />\n<xf:css src=\"kl_em_froala_special_characters.less\" />\n$0"
+}

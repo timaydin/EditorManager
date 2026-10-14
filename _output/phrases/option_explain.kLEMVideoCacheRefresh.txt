@@ -1,1 +1,0 @@
-If a value greater than 0 is entered, images cached by the video proxy will be refreshed after this many days have passed. This can be used in conjunction with a long cache lifetime to allow videos to be updated periodically while retaining resilience against the video being removed. If a value of 0 is entered, videos will only be updated when the cache entry expires.

@@ -1,9 +1,0 @@
-{
-    "template": "smilie_list",
-    "description": "Extend smilie category colspan",
-    "execution_order": 10,
-    "enabled": true,
-    "action": "str_replace",
-    "find": "<xf:if is=\"!$exportView\">\n\t\t\t\t\t\t\t\t\t<xf:delete href=\"{{ link('smilie-categories/delete'",
-    "replace": "<xf:cell />\n$0"
-}

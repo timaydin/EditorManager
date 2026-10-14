@@ -1,1 +1,0 @@
-Enable character counter

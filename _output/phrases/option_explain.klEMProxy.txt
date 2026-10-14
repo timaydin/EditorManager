@@ -1,1 +1,0 @@
-By enabling these options, you may proxy and cache videos and audios posted in messages through your own server, allowing tracking of clicks etc. This is especially important if you are running your site through SSL (HTTPS).

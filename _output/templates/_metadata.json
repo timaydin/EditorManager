@@ -1,79 +1,4 @@
 {
-    "admin/kl_em_app.less": {
-        "version_id": 2000052,
-        "version_string": "2.0.0 Release Candidate 2",
-        "hash": "5f76fc0db9287296593f55df88657a82"
-    },
-    "admin/kl_em_bb_code_edit.html": {
-        "version_id": 1010033,
-        "version_string": "1.1.0 Beta 3",
-        "hash": "d129a2c49a34836d61d98f656735676c"
-    },
-    "admin/kl_em_bb_code_list.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "da820e23576e0951d3e5f710b69c971d"
-    },
-    "admin/kl_em_font_edit.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "6f04bc34e6ec7159b8476e5ce19f6272"
-    },
-    "admin/kl_em_font_edit.less": {
-        "version_id": 1010072,
-        "version_string": "1.1.0.2",
-        "hash": "0716cddd5d07496675709b9a5c839ea5"
-    },
-    "admin/kl_em_font_list.html": {
-        "version_id": 1010072,
-        "version_string": "1.1.0.2",
-        "hash": "6f4c5d1124095f9cbd565deaaa9a5ac7"
-    },
-    "admin/kl_em_font_sort.html": {
-        "version_id": 1010072,
-        "version_string": "1.1.0.2",
-        "hash": "ce42bad19edbcf4f9e621f0fa2536b98"
-    },
-    "admin/kl_em_log_audio_proxy_list.html": {
-        "version_id": 1010033,
-        "version_string": "1.1.0 Beta 3",
-        "hash": "05a21582e1a9979b5bef8b6a0a6d7554"
-    },
-    "admin/kl_em_log_audio_proxy_view.html": {
-        "version_id": 1010033,
-        "version_string": "1.1.0 Beta 3",
-        "hash": "629c1f61212dfefad8bafe023254e734"
-    },
-    "admin/kl_em_log_video_proxy_list.html": {
-        "version_id": 1010033,
-        "version_string": "1.1.0 Beta 3",
-        "hash": "ea9ce7b479c91b03ebb99bd37aa1b8a3"
-    },
-    "admin/kl_em_log_video_proxy_view.html": {
-        "version_id": 1010033,
-        "version_string": "1.1.0 Beta 3",
-        "hash": "7632d40550b35397e52c6ac38b5bf9de"
-    },
-    "admin/kl_em_option_available_colors.html": {
-        "version_id": 1010072,
-        "version_string": "1.1.0.2",
-        "hash": "8ccacfa1c0f55860a2d9688e1b322492"
-    },
-    "admin/kl_em_option_debug_text_option.html": {
-        "version_id": 1000291,
-        "version_string": "1.0.2 Patch Level 1",
-        "hash": "c042964ccbeffd69d7e2764e4a2e0190"
-    },
-    "admin/kl_em_option_enabled_bbcodes.html": {
-        "version_id": 1010032,
-        "version_string": "1.1.0 Beta 2",
-        "hash": "e21901e1b785d2160e65bdd16374621a"
-    },
-    "admin/kl_em_smilie_edit_macros.html": {
-        "version_id": 1030031,
-        "version_string": "1.3.0 Beta 1",
-        "hash": "f723060a31bb81d1c7ce770a9beed935"
-    },
     "admin/kl_em_special_chars_character_delete.html": {
         "version_id": 1010070,
         "version_string": "1.1.0",
@@ -85,14 +10,14 @@
         "hash": "644df705094d8928464e011476ce6988"
     },
     "admin/kl_em_special_chars_character_list.html": {
-        "version_id": 1010072,
-        "version_string": "1.1.0.2",
-        "hash": "eb605c5e43b0f76f7c6c603123c78f1e"
+        "version_id": 3000070,
+        "version_string": "3.0.0",
+        "hash": "e88c15b42aeb7a088857f434eb0e4afa"
     },
     "admin/kl_em_special_chars_character_sort.html": {
-        "version_id": 1010070,
-        "version_string": "1.1.0",
-        "hash": "16555338a89c2a6b2a0c52062e7ff653"
+        "version_id": 3000070,
+        "version_string": "3.0.0",
+        "hash": "5f2f41f7eb47f2d5cfa2caadf0961cd5"
     },
     "admin/kl_em_special_chars_delete.html": {
         "version_id": 1010070,
@@ -120,139 +45,14 @@
         "hash": "ab8fd3d03247122adfa424abf4588ae4"
     },
     "admin/kl_em_special_chars_list.html": {
-        "version_id": 1010072,
-        "version_string": "1.1.0.2",
-        "hash": "c7e6f872b785d6351fcdd706c83ae05f"
+        "version_id": 3000070,
+        "version_string": "3.0.0",
+        "hash": "2f87795dad1fefa668138e490ace6804"
     },
     "admin/kl_em_special_chars_sort.html": {
-        "version_id": 1010070,
-        "version_string": "1.1.0",
-        "hash": "fca12766b4f0c60c26766d96739d2ab5"
-    },
-    "admin/kl_em_template_edit.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "0eb4bc7b2fec6eb662917b21200f4754"
-    },
-    "admin/kl_em_template_list.html": {
-        "version_id": 1010072,
-        "version_string": "1.1.0.2",
-        "hash": "96be98ec4160cf4584351f6de62b3c63"
-    },
-    "admin/kl_em_template_sort.html": {
-        "version_id": 1010072,
-        "version_string": "1.1.0.2",
-        "hash": "0fa8efb16abf26c9dcd9bb04fb047879"
-    },
-    "public/editor_dialog_kl_em_gfont.html": {
-        "version_id": 1000370,
-        "version_string": "1.0.3",
-        "hash": "3b772d1f616dad2d488dc338833ab0a8"
-    },
-    "public/kl_em_PAGE_CONTAINER.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "0ca7e9ada208d43923f7ccb53e93c31c"
-    },
-    "public/kl_em_bb_code.less": {
-        "version_id": 1030031,
-        "version_string": "1.3.0 Beta 1",
-        "hash": "80df6177bdd37b8ee246e77c8d8ac66f"
-    },
-    "public/kl_em_bb_code_tag_audio.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "7d976a327d38ca140b6910e8ccb0b53d"
-    },
-    "public/kl_em_bb_code_tag_chart.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "0728d27aee247af51097a2686999da89"
-    },
-    "public/kl_em_bb_code_tag_chart.less": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "7d8693e997109f2aeac04066301679d6"
-    },
-    "public/kl_em_bb_code_tag_hide_date.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "bfe39a30ec9d6133c73c9b16c03ab82e"
-    },
-    "public/kl_em_bb_code_tag_hide_group.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "19294570b22da0993c6829ec98d1e207"
-    },
-    "public/kl_em_bb_code_tag_hide_members.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "e5470c2bfa5063c8d588c19b728f5cdd"
-    },
-    "public/kl_em_bb_code_tag_hide_posts.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "da0d2671c8bd6b861c83df893c89d22e"
-    },
-    "public/kl_em_bb_code_tag_hide_reply.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "3ec7b5a8550ed79491ee7b9e63b40e3b"
-    },
-    "public/kl_em_bb_code_tag_hide_reply_thanks.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "e84f26027b3466fa787c13f859752117"
-    },
-    "public/kl_em_bb_code_tag_hide_thanks.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "892bb48f8519716bd344b83c4cf9c70d"
-    },
-    "public/kl_em_bb_code_tag_table.html": {
-        "version_id": 1010072,
-        "version_string": "1.1.0.2",
-        "hash": "7819e5f3c8038adc5a075375e1434c0d"
-    },
-    "public/kl_em_bb_code_tag_video.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "9d21cc9c8204a3b8aea01efebf462478"
-    },
-    "public/kl_em_custom_emote_edit.html": {
-        "version_id": 1030031,
-        "version_string": "1.3.0 Beta 1",
-        "hash": "658715716797cc92410fb9b04c11b8bc"
-    },
-    "public/kl_em_custom_emote_list.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "0df492d2c2276fb87df39e3b481bd6fc"
-    },
-    "public/kl_em_editor.html": {
-        "version_id": 1010072,
-        "version_string": "1.1.0.2",
-        "hash": "7e6e5413eee6d6a1766305f8ccef950e"
-    },
-    "public/kl_em_editor.less": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "11f3cc029f7e55729527cb7c57f30eb5"
-    },
-    "public/kl_em_editor_font_awesome_icons.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "ad7a24504d364132f9c15d3559c79494"
-    },
-    "public/kl_em_editor_phrases.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "a99809e42d49765878c49e167cdd7b18"
-    },
-    "public/kl_em_editor_plugins.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "ec47cfae239da519fe7f38bad6010d37"
+        "version_id": 3000070,
+        "version_string": "3.0.0",
+        "hash": "8dfe27a11236dda9f617c8204b31ab1c"
     },
     "public/kl_em_editor_special_characters.html": {
         "version_id": 1020070,
@@ -260,73 +60,13 @@
         "hash": "54915a2473c36992e9c19f334eb9534e"
     },
     "public/kl_em_editor_special_characters_search_results.html": {
-        "version_id": 1020070,
-        "version_string": "1.2.0",
-        "hash": "bfa8a0b1e6528cb91feaf2fb614ec9ee"
-    },
-    "public/kl_em_editor_templates.less": {
-        "version_id": 1010072,
-        "version_string": "1.1.0.2",
-        "hash": "4bdc5f1017f97009a9651d0b439cc126"
-    },
-    "public/kl_em_filter_macros.html": {
-        "version_id": 1010072,
-        "version_string": "1.1.0.2",
-        "hash": "22724c919cc0daa0433f9607c8eced6d"
-    },
-    "public/kl_em_froala_font_awesome_icons.less": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "6517dbf53435cfb4e6c588011c5048fc"
-    },
-    "public/kl_em_froala_fullscreen.less": {
-        "version_id": 1000291,
-        "version_string": "1.0.2 Patch Level 1",
-        "hash": "b0cabd3e13f858d7eaeeb1a98a78d6b5"
-    },
-    "public/kl_em_froala_image.less": {
-        "version_id": 1010033,
-        "version_string": "1.1.0 Beta 3",
-        "hash": "cdaa59a555d91b2f2652d167b3434697"
+        "version_id": 3000070,
+        "version_string": "3.0.0",
+        "hash": "270dbb245c1132383296639338532605"
     },
     "public/kl_em_froala_special_characters.less": {
         "version_id": 1020091,
         "version_string": "1.2.0 Patch Level 1",
         "hash": "5a526bb4613d2d8f4272a9dd7cbba889"
-    },
-    "public/kl_em_help_page_bb_codes.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "a557fd77a1c2480d6e6f51258a254e84"
-    },
-    "public/kl_em_hide_macros.html": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "179fa59813f041f0bb002447d484c9ad"
-    },
-    "public/kl_em_plyr.less": {
-        "version_id": 2000010,
-        "version_string": "2.0.0 Alpha",
-        "hash": "4a87b23531240d2c4bb2ab8f52d582e0"
-    },
-    "public/kl_em_template_edit.html": {
-        "version_id": 1010072,
-        "version_string": "1.1.0.2",
-        "hash": "f1f1bf4ecfe89a71d32cc3c3821536e6"
-    },
-    "public/kl_em_template_list.html": {
-        "version_id": 1030031,
-        "version_string": "1.3.0 Beta 1",
-        "hash": "1076f0960ed0da37a773c7b2a913587f"
-    },
-    "public/kl_em_template_sort.html": {
-        "version_id": 1010072,
-        "version_string": "1.1.0.2",
-        "hash": "abc1693b1e03ae281e7557cd98485d0e"
-    },
-    "public/rpg_location.less": {
-        "version_id": 1020093,
-        "version_string": "1.2.0 Patch Level 3",
-        "hash": "f394a83bc11dcb07e9f3eed83096ef92"
     }
 }

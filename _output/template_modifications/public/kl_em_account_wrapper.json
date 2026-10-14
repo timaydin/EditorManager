@@ -1,9 +1,0 @@
-{
-    "template": "account_wrapper",
-    "description": "Add Template to list",
-    "execution_order": 10,
-    "enabled": true,
-    "action": "str_replace",
-    "find": "<!--[XF:profile_links:bottom]-->",
-    "replace": "<xf:comment>\n<xf:if is=\"$xf.visitor.hasPermission('klEM', 'emotes')\">\n<a class=\"blockLink {{ $pageSelected == 'kl_custom_emotes' ? 'is-selected' : '' }}\" href=\"{{ link('account/kl-custom-emotes/') }}\">\n\t{{ phrase('kl_em_custom_emotes') }}\n</a>\n</xf:if>\n</xf:comment>\n<xf:if is=\"$xf.visitor.hasPermission('klEM', 'klEMPrivateTemplates')\">\n<a class=\"blockLink {{ $pageSelected == 'kl_editor_templates' ? 'is-selected' : '' }}\" href=\"{{ link('account/kl-editor-templates/') }}\">\n\t{{ phrase('kl_em_editor_templates') }}\n</a>\n</xf:if>\n$0"
-}

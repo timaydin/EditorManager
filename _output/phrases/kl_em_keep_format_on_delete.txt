@@ -1,1 +1,0 @@
-Keep format on delete

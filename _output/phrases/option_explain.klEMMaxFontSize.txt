@@ -1,1 +1,0 @@
-The maximum font size that can be specified (in pixel). 0 for no limit.

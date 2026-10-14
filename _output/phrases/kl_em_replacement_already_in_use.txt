@@ -1,1 +1,0 @@
-The selected replacement is already in use by another emote.

@@ -1,1 +1,0 @@
-Available sizes in the editor font size dropdown, separated by comma.

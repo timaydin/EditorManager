@@ -1,1 +1,0 @@
-Log audio and video proxy referrers for x days:
