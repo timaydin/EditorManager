@@ -494,11 +494,15 @@ class SpecialChars extends AbstractController
         $masterTitle->phrase_text = $categoryName;
         $masterTitle->save();
 
+        $displayOrder = 0;
         foreach ($enabled as $key) {
+            $displayOrder += 10;
+
             /** @var SpecialCharacter $character */
             $character = $this->em()->create('KL\EditorManager:SpecialCharacter');
             $character->code = $codes[$key];
             $character->group_id = $category->group_id;
+            $character->display_order = $displayOrder;
             $character->save();
 
             $masterTitle = $character->getMasterPhrase();

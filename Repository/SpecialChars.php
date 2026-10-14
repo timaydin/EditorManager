@@ -28,7 +28,7 @@ class SpecialChars extends Repository
     public function findGroupsForList(): Finder
     {
         return $this->finder('KL\EditorManager:SpecialCharacterGroup')
-            ->order('display_order');
+            ->order(['display_order', 'group_id']);
     }
 
     /**
@@ -40,7 +40,7 @@ class SpecialChars extends Repository
     {
         return $this->finder('KL\EditorManager:SpecialCharacter')
             ->where('group_id', $groupIds)
-            ->order('display_order');
+            ->order(['display_order', 'character_id']);
     }
 
     /**
